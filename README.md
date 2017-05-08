@@ -25,7 +25,7 @@ In this lab, we'll walk through the basics of:
 The following components are required to follow this lab in its entirety.  
 
 ### Hardware
-**Note**: If you have some experience with prototyping boards and developing Arduino sketches, you can substitute many of the sensors and components in this guide and achieve the same general output. This is the power of Azure IoT Hub - device agnostic support through standards based protocols like AMQP, MQTT, and HTTPS.
+**Note**: If you have some experience with prototyping boards and developing Arduino sketches, you can substitute many of the sensors and components in this guide and achieve the same general output. This is the power of Azure IoT Hub - device agnostic support through standards based protocols like AMQP, MQTT, and HTTPS. That being said, the lab is written for use with the following hardware:
 
 * [NodeMCU (v1.0)](http://amzn.to/2qTRR2F)
 * [Grove Base Shield for NodeMCU](http://amzn.to/2qTtH7E) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/105020008/))
