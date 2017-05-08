@@ -8,7 +8,7 @@ This serves as a working document for the Azure Internet of Things Workshop in w
 * [Requirements](#requirements)
   * [Hardware](#hardware)
   * [Software](#software)
-* [Configure Arduino for ESP8266](#configure-arduino-for-esp8266)
+* [Configure Arduino IDE for ESP8266](#configure-arduino-ide-for-esp8266)
 
 ## Activity Summary
 
