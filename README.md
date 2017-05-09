@@ -132,3 +132,8 @@ Note: If any of the board configuration settings have been changed, be sure to c
     WiFi.begin(ssid, password);
   }
   ```
+* **Q: This isn't working for me on `ESP-01`, `ESP-003`, or other alternative board - what can I do?**  
+  A: Try adding the following snippet immediately before the `WiFi.begin(ssid, password);` line:
+  ```
+  WiFi.setOutputPower(0);
+  ```
