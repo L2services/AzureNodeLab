@@ -96,10 +96,17 @@ Note: If any of the board configuration settings have been changed, be sure to c
 
 
 ### Configure Libraries
-```
-//TODO: Add notes on how to add the Azure IoT Libraries
-```
-Sketch → Include Library → Manage Library
+
+1. Sketch → Include Library → Manage Libraries
+1. Type `azure` in the filter box
+1. Select each of the below libraries and choose install for each
+
+   | Library                | Author    | Version |
+   |------------------------|-----------|---------|
+   | AzureIoTHub            | Arduino   | 1.0.30  |
+   | AzureIoTProtocol_HTTP  | Microsoft | 1.0.30  |
+   | AzureIoTProtocol_MQTT  | Microsoft | 1.0.30  |
+   | AzureIoTUtility        | Microsoft | 1.0.30  |
 
 ## FAQ
 * **Q: The text in my Serial Port Monitor is all boxes/squares, what should I do?**  
