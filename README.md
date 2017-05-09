@@ -78,7 +78,7 @@ Similar to the hardware, if you have a preferred Arduino / ESP8266 IDE, you may 
 1. Type `ESP8266` in the search box at the top of the Boards Manager screen
 1. Click the `esp8266` record to select the row then select `Install` to install the package.
 ![ESP8266 Package Installation](/images/software_configuration/Board_Manager_ESP8266.png)  
-**Note**: The installation may take several minutes as the file is a large down
+**Note**: The installation may take several minutes as the file is a large download. The version of the esp8266 package used in this lab is 2.3.0
 1. Open the menu: `Tools` → `Board` and select `NodeMCU 1.0`  
 ![Select Board 1](/images/software_configuration/board_selection1.png)  
 ![Select Board 2](/images/software_configuration/board_selection2.png)  
@@ -97,3 +97,10 @@ Note: If any of the board configuration settings have been changed, be sure to c
 ```
 //TODO: Add notes on how to add the Azure IoT Libraries
 ```
+Sketch → Include Library → Manage Library
+
+## FAQ
+* **Q: The text in my Serial Port Monitor is all boxes/squares, what should I do?**  
+  A: Make sure to select the correct baud rate in the bottom-right corner of the Serial Port Monitor. For this lab, we are using `115200`.
+* **Q: I'm getting a `XYZ` error in my Serial Port Monitor, what should I do?**  
+  A: Try closing reopening the Serial Port by selecting Tools → Port and then reselecting your desired port.
