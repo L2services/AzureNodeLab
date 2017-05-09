@@ -47,6 +47,16 @@ Similar to the hardware, if you have a preferred Arduino / ESP8266 IDE, you may 
   * [Windows Store](https://www.microsoft.com/en-us/store/p/arduino-ide/9nblggh4rsd8)
 * ESP8266 Board Package (for Arduino IDE)
 * CP210x Driver (if it's not already installed on your system)
+* Azure Subscription
+  * If you already have an Azure Organizational Account, you may use that for this lab.
+  * If you don't already have an Azure Subscription, you can create a free trial 
+* Azure Device Explorer
+
+## Create Azure IoT Hub
+
+```
+//TODO: Instructions on creating and configuring IoT Hub
+```
 
 ## Software Installation
 
@@ -92,7 +102,7 @@ Note: If any of the board configuration settings have been changed, be sure to c
 * Upload Speed: "115200"
 * Port: *{see Device Manager}*  
 
-![Board Configuration](/images/board_configuration/board_configuration.png)
+  ![Board Configuration](/images/board_configuration/board_configuration.png)
 
 
 ### Configure Libraries
@@ -113,3 +123,12 @@ Note: If any of the board configuration settings have been changed, be sure to c
   A: Make sure to select the correct baud rate in the bottom-right corner of the Serial Port Monitor. For this lab, we are using `115200`.
 * **Q: I'm getting a `XYZ` error in my Serial Port Monitor, what should I do?**  
   A: Try closing reopening the Serial Port by selecting Tools → Port and then reselecting your desired port.
+* **Q: Are there other debugging steps I can take related to a failed WiFi connection?**  
+  A: Set "Debug Port: Serial" and "Debug Level: Core" in the Arduino IDE Tools menu. Add `Serial.setDebugOutput(true);` after `Serial.begin(9600);`. This will print additional information from the WiFi stack which may provide hints as to what is going wrong.
+* **Q: How can I check if the WiFi connection is established before connecting?**  
+  A: Use the following snippet:
+  ```
+  if (WiFi.status() != WL_CONNECTED) {
+    WiFi.begin(ssid, password);
+  }
+  ```
