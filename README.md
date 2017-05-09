@@ -83,6 +83,15 @@ Similar to the hardware, if you have a preferred Arduino / ESP8266 IDE, you may 
 ![Select Board 1](/images/software_configuration/board_selection1.png)  
 ![Select Board 2](/images/software_configuration/board_selection2.png)  
 
+Note: If any of the board configuration settings have been changed, be sure to change them back to the defaults documented below:
+* Board: "NodeMCU 1.0 (ESP-12E Module)"
+* CPU Frequency: "80 MHz"
+* Flash Size: "4M (3M SPIFFS)"
+* Upload Speed: "115200"
+* Port: *{see Device Manager}*  
+
+![Board Configuration](/images/board_configuration/board_configuration.png)
+
 
 ## Configure Libraries
 ```
