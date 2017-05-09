@@ -11,6 +11,8 @@ This serves as a working document for the Azure Internet of Things Workshop in w
 * [Software Installation](#software-installation)
   * [Install the Arduino IDE](#install-the-arduino-ide)
   * [Configure Arduino IDE for ESP8266](#configure-arduino-ide-for-esp8266)
+  * [Configure Libraries](#configure-libraries)
+* [FAQ / Help](#faq)
 
 ## Activity Summary
 
@@ -63,7 +65,7 @@ Similar to the hardware, if you have a preferred Arduino / ESP8266 IDE, you may 
 1. Click `Close` to complete the Arduino IDE installation  
   ![First Driver](/images/software_install/arduino-windows_finish.png)
 
-## Configure Arduino IDE for ESP8266
+### Configure Arduino IDE for ESP8266
 1. Open the Arduino IDE and click on `File` → `Preferences`  
 ![Arduino Desktop Icon](/images/software_configuration/Arduino_Desktop_Icon.png)  
 ![Arduino File Preferences](/images/software_configuration/Arduino_File_Preferences.png)
@@ -93,7 +95,7 @@ Note: If any of the board configuration settings have been changed, be sure to c
 ![Board Configuration](/images/board_configuration/board_configuration.png)
 
 
-## Configure Libraries
+### Configure Libraries
 ```
 //TODO: Add notes on how to add the Azure IoT Libraries
 ```
