@@ -132,8 +132,18 @@ Note: If any of the board configuration settings have been changed, be sure to c
     WiFi.begin(ssid, password);
   }
   ```
+* **Q: I'm still having issues connecting to WiFi even after trying the above troubleshooting steps**  
+  A: Try the following:
+  ```
+  WiFi.persistent(false);
+  WiFi.mode(WIFI_OFF);   // this is a temporary line, to be removed after SDK update to 1.5.4
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+  ```
 * **Q: This isn't working for me on `ESP-01`, `ESP-003`, or other alternative board - what can I do?**  
   A: Try adding the following snippet immediately before the `WiFi.begin(ssid, password);` line:
   ```
   WiFi.setOutputPower(0);
   ```
+* **Q: Can I set a fallback where the device will broadcast it's own Access Point?**  
+  A: Check out the following snippet: [AP Fallback GitHub comment](https://github.com/esp8266/Arduino/issues/2186#issuecomment-260182998)
