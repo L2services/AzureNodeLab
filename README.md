@@ -82,3 +82,9 @@ Similar to the hardware, if you have a preferred Arduino / ESP8266 IDE, you may 
 1. Open the menu: `Tools` → `Board` and select `NodeMCU 1.0`  
 ![Select Board 1](/images/software_configuration/board_selection1.png)  
 ![Select Board 2](/images/software_configuration/board_selection2.png)  
+
+
+## Configure Libraries
+```
+//TODO: Add notes on how to add the Azure IoT Libraries
+```
