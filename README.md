@@ -52,6 +52,8 @@ Similar to the hardware, if you have a preferred Arduino / ESP8266 IDE, you may 
   * If you don't already have an Azure Subscription, you can create a free trial 
 * Azure Device Explorer
 
+
+
 ## Create Azure IoT Hub
 
 ```
@@ -117,6 +119,11 @@ Note: If any of the board configuration settings have been changed, be sure to c
    | AzureIoTProtocol_HTTP  | Microsoft | 1.0.30  |
    | AzureIoTProtocol_MQTT  | Microsoft | 1.0.30  |
    | AzureIoTUtility        | Microsoft | 1.0.30  |
+   | AzureIoTHubMQTTClient  | Andri Yadi| 0.2.2   |
+   | ArduinoJson            | Benoit Blanchon| 5.9.0|
+1. Download the following Libs and manually add them by going to Sketch → Include Library → Add .Zip Library
+    1. [Arduino Libraries - Time](https://github.com/PaulStoffregen/Time)
+    1. [Arduino Libraries - Accel Sensor](https://github.com/Seeed-Studio/Accelerometer_ADXL345)
 
 ## FAQ
 * **Q: The text in my Serial Port Monitor is all boxes/squares, what should I do?**  
