@@ -12,6 +12,10 @@ This serves as a working document for the Azure Internet of Things Workshop in w
   * [Install the Arduino IDE](#install-the-arduino-ide)
   * [Configure Arduino IDE for ESP8266](#configure-arduino-ide-for-esp8266)
   * [Configure Libraries](#configure-libraries)
+* [Configure Azure Services](#configure-azure-services)
+  * [Create Azure IoT Hub](#create-azure-iot-hub)
+  * [Create Azure Streaming Analytics](#create-azure-streaming-analytics)
+* [Configure PowerBI](#configure-powerbi)  
 * [FAQ / Help](#faq)
 
 ## Activity Summary
@@ -52,13 +56,6 @@ Similar to the hardware, if you have a preferred Arduino / ESP8266 IDE, you may 
   * If you don't already have an Azure Subscription, you can create a free trial 
 * Azure Device Explorer
 
-
-
-## Create Azure IoT Hub
-
-```
-//TODO: Instructions on creating and configuring IoT Hub
-```
 
 ## Software Installation
 
@@ -124,6 +121,17 @@ Note: If any of the board configuration settings have been changed, be sure to c
 1. Download the following Libraries and manually add them by going to Sketch → Include Library → Add .Zip Library
     1. [Time](https://github.com/PaulStoffregen/Time)
     1. [Grove ADXL345 (Accelerometer)](https://github.com/Seeed-Studio/Accelerometer_ADXL345)
+
+## Configure Azure Services
+We will create Azure IoT Hub and Streaming Analytics jobs in this step. If you don't have an Azure account already, you can go to [https://azure.microsoft.com/en-us/free](https://azure.microsoft.com/en-us/free) with $200 free credit.
+
+   ### Create Azure IoT Hub
+   1. Login to [Azure poral](https://portal.azure.com) 
+   1. 
+   ### Create Azure Streaming Analytics
+  
+## Configure PowerBI
+
 
 ## FAQ
 * **Q: The text in my Serial Port Monitor is all boxes/squares, what should I do?**  
