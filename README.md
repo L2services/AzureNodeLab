@@ -1,7 +1,4 @@
 # Azure IoT Workshop: NodeMCU Lab
-IoT Workshop Lab using the NodeMCU (ESP8266) board.
-
-This serves as a working document for the Azure Internet of Things Workshop in which the NodeMCU (ESP8266) Arduino compatible prototyping board is used to connect to Azure IoT.  
 
 ## Table of Contents
 * [Activity Summary](#activity-summary)
