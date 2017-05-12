@@ -11,7 +11,7 @@
   * [Configure Libraries](#configure-libraries)
 * [Configure Azure Services](#configure-azure-services)
   * [Create Azure IoT Hub](#create-azure-iot-hub)
-  * [Create Azure Streaming Analytics](#create-azure-streaming-analytics)
+  * [Create Azure Stream Analytics](#create-azure-stream-analytics)
 * [Configure PowerBI](#configure-powerbi)  
 * [FAQ / Help](#faq)
 
@@ -117,14 +117,44 @@ Note: If any of the board configuration settings have been changed, be sure to c
     1. [Grove ADXL345 (Accelerometer)](https://github.com/Seeed-Studio/Accelerometer_ADXL345)
 
 ## Configure Azure Services
-We will create Azure IoT Hub and Streaming Analytics jobs in this step. 
+We will create Azure IoT Hub and Stream Analytics jobs in this step. 
    ### Create Azure IoT Hub
    1. Login to [Azure poral](https://portal.azure.com) 
    1. "+ New" from the left menu → search for "IoT Hub" → select "IoT Hub" → Create
-   [Creat AZ IoT Hub](/images/Azure_configuration/Create_IoTHub.png)
-   1. 
+   ![Creat AZ IoT Hub](/images/Azure_configuration/Create_IoTHub.png)
+   1. Enter Name (alphanumeric character or '-' only)
+   1. Select **F1 Free tier** in **Pricing and scale tier**
+   1. Create a new Resource Group if you don't have one already, or select an existing group in the drop down
+   1. Select **West Central US** in **Location**
+   1. Create
+
+   ### Register Deveice to Azure IoT Hub
+   1. Once IoT Hub is deployed, copy the connection string info from Shared access policies → iothubowner → Connection string - Primary key.  
+   ![Grant access to IoT Hub](/images/Azure_configuration/GrantAccess_IoTHub.png)
+   1. Open Device Explorer that we installed on your laptop/computer earlier
+   1. Pasted the connecstion string to the **IoT Hub Connection String** field in **Configuration** tab, and click **Update**. 
+   ![Setting Device Explorer](/images/Azure_configuration/Setting_Device_Explorer.png)
+   1. Create a new device. Management tab → Create → input a device name in the prompt → Create 
+  ![Create New Device](/images/Azure_configuration/Create_Device.png)
+   1. Copy the new device's ***ID***, ***PrimaryKey***, and the IoT Hub's host name information, and paste them in the Arduino code where ***IoTHub_HOSTNAME***, ***DEVICE_ID***, and ***DEVICE_KEY*** are declared
+   ![Device Info in Code](/images/Azure_configuration/Device_Info_In_Code.png)
+   1. Connect your NodeMCU device to your laptop/computer. Compile and Upload the code to the NodeMCU board by clicking on Upload button at left top.
+   ![Upload code](/images/Azure_configuration/Upload_Code_To_Device.png)
+   1. Review the output in Arduino IDE. Click Tools in Sketch → Serial Port Monitor and you should see it connects to Azure successfully.
+   1. Go back to Device Explorer → Data tab → make sure Event Hub name is the IoT Hub we just created → select the new created device in **Device ID** field → click on Monitor
+   1. Verify IoT Hub is receiving data like the screenshot below
+  ![Receiving Data](/images/Azure_configuration/Receiving_IoT_Data.png)
+  
+
+
+
+
+
+
+
+
       
-   ### Create Azure Streaming Analytics
+   ### Create Azure Stream Analytics
   
 ## Configure PowerBI
 
