@@ -117,11 +117,13 @@ Note: If any of the board configuration settings have been changed, be sure to c
     1. [Grove ADXL345 (Accelerometer)](https://github.com/Seeed-Studio/Accelerometer_ADXL345)
 
 ## Configure Azure Services
-We will create Azure IoT Hub and Streaming Analytics jobs in this step. If you don't have an Azure account already, you can go to [https://azure.microsoft.com/en-us/free](https://azure.microsoft.com/en-us/free) with $200 free credit.
-
+We will create Azure IoT Hub and Streaming Analytics jobs in this step. 
    ### Create Azure IoT Hub
    1. Login to [Azure poral](https://portal.azure.com) 
+   1. "+ New" from the left menu → search for "IoT Hub" → select "IoT Hub" → Create
+   [Creat AZ IoT Hub](/images/Azure_configuration/Create_IoTHub.png)
    1. 
+      
    ### Create Azure Streaming Analytics
   
 ## Configure PowerBI
