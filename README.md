@@ -49,7 +49,8 @@ Similar to the hardware, if you have a preferred Arduino / ESP8266 IDE, you may 
 * CP210x Driver (if it's not already installed on your system)
 * Azure Subscription
   * If you already have an Azure Organizational Account, you may use that for this lab.
-  * If you don't already have an Azure Subscription, you can create a free trial 
+  * If you don't already have an Azure Subscription, you can create a [free trial](https://azure.microsoft.com/en-us/free/)
+    * $200 in credit at the time of writing. 
 * Azure Device Explorer
 
 
