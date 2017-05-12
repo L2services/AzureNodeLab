@@ -21,7 +21,7 @@ In this lab, we'll walk through the basics of:
 * Visualizing and analyzing the IoT data in PowerBI
 
 ## Requirements
-The following components are required to follow this lab in its entirety. If you have experience with prototyping boards and developing Arduino sketches, you can substitute many of the sensors and components in this guide and achieve the same general output. This is the power of Azure IoT Hub - device agnostic support through standards based protocols like AMQP, MQTT, and HTTPS. That being said, the lab is written for use with a specific set of devices and hardware and the supporting source code matches this hardware.
+The following components are required to follow this lab in its entirety. If you have experience with prototyping boards and developing Arduino sketches, you can substitute many of the sensors and components in this guide and achieve the same general output. This is the power of Azure IoT Hub: device agnostic support through standards based protocols like AMQP, MQTT, and HTTPS. That being said, the lab is written for use with a specific set of devices and hardware and the supporting source code matches this hardware.
 
 ### Hardware
 
@@ -32,21 +32,17 @@ The following components are required to follow this lab in its entirety. If you
   * [Vibration Sensor](http://amzn.to/2qTDpqN) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020054/))
   * [LED Multicolor](http://amzn.to/2qTHSdP) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/104030014/))
   * [Button](http://amzn.to/2pZvedb) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020003/))
-  * [Grove cables](http://amzn.to/2pUQ2Es) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/110990027))
 
 ### Software
 
-* [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+* [Arduino IDE](https://www.arduino.cc/en/Main/Software) (v1.8.2)
   * [Windows Installer](https://downloads.arduino.cc/arduino-1.8.2-windows.exe)
   * [Windows Zip for non-admin install](https://downloads.arduino.cc/arduino-1.8.2-windows.zip)
   * [Windows Store](https://www.microsoft.com/en-us/store/p/arduino-ide/9nblggh4rsd8)
-* ESP8266 Board Package (for Arduino IDE)
-* CP210x Driver (if it's not already installed on your system)
 * Azure Subscription
   * If you already have an Azure Organizational Account, you may use that for this lab.
-  * If you don't already have an Azure Subscription, you can create a [free trial](https://azure.microsoft.com/en-us/free/)
-    * $200 in credit at the time of writing. 
-* Azure Device Explorer
+  * If you don't already have an Azure Subscription, you can create a [free trial](https://azure.microsoft.com/en-us/free/) ($200 credit)
+* [Azure Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases/download/2017-5-5/SetupDeviceExplorer.msi)
 
 
 
@@ -120,6 +116,8 @@ Note: If any of the board configuration settings have been changed, be sure to c
     1. [Grove ADXL345 (Accelerometer)](https://github.com/Seeed-Studio/Accelerometer_ADXL345)
 
 ## FAQ
+* **Q: Do I need any special drivers?**  
+  A: You may need the [CP210x Driver](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) if it's not already installed on your system. Windows Update can also install these drivers if you are connected to the internet and your computer policy allows it.
 * **Q: The text in my Serial Port Monitor is all boxes/squares, what should I do?**  
   A: Make sure to select the correct baud rate in the bottom-right corner of the Serial Port Monitor. For this lab, we are using `115200`.  
 * **Q: I'm getting a `XYZ` error in my Serial Port Monitor, what should I do?**  
