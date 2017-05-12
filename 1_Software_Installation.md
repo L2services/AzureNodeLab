@@ -1,7 +1,7 @@
 # Software Installation
 
 > **Note**: If you are completing the lab in person, check with your lab leader to see if there is a local copy of the files available.  
-> \> Skip to [Install Libraries (flash drive)](2_B_Install_Libraries_offline)
+> \> Skip to [Install Libraries (offline)](2_B_Install_Libraries_offline.md)
 
 ## Install the Arduino IDE
 1. Download the [Windows Installer](https://downloads.arduino.cc/arduino-1.8.2-windows.exe)
@@ -44,3 +44,8 @@ Note: If any of the board configuration settings have been changed, be sure to c
 * Port: *{see Device Manager}*  
 
   ![Board Configuration](/images/board_configuration/board_configuration.png)
+
+# Next
+Now that we've installed the Arduino IDE and configured the IDE to interact with our NodeMCU prototyping board, let's install the supporting libraries!
+
+*Next Step*: [Create Azure IoT Hub](3_Azure_IoT_Hub.md)
