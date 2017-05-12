@@ -9,6 +9,10 @@
   * [Install the Arduino IDE](#install-the-arduino-ide)
   * [Configure Arduino IDE for ESP8266](#configure-arduino-ide-for-esp8266)
   * [Configure Libraries](#configure-libraries)
+* [Configure Azure Services](#configure-azure-services)
+  * [Create Azure IoT Hub](#create-azure-iot-hub)
+  * [Create Azure Streaming Analytics](#create-azure-streaming-analytics)
+* [Configure PowerBI](#configure-powerbi)  
 * [FAQ / Help](#faq)
 
 ## Activity Summary
@@ -44,13 +48,6 @@ The following components are required to follow this lab in its entirety. If you
   * If you don't already have an Azure Subscription, you can create a [free trial](https://azure.microsoft.com/en-us/free/) ($200 credit)
 * [Azure Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases/download/2017-5-5/SetupDeviceExplorer.msi)
 
-
-
-## Create Azure IoT Hub
-
-```
-//TODO: Instructions on creating and configuring IoT Hub
-```
 
 ## Software Installation
 
@@ -114,6 +111,19 @@ Note: If any of the board configuration settings have been changed, be sure to c
 1. Download the following Libraries and manually add them by going to Sketch → Include Library → Add .Zip Library
     1. [Time](https://github.com/PaulStoffregen/Time)
     1. [Grove ADXL345 (Accelerometer)](https://github.com/Seeed-Studio/Accelerometer_ADXL345)
+
+## Configure Azure Services
+We will create Azure IoT Hub and Streaming Analytics jobs in this step. 
+   ### Create Azure IoT Hub
+   1. Login to [Azure poral](https://portal.azure.com) 
+   1. "+ New" from the left menu → search for "IoT Hub" → select "IoT Hub" → Create
+   [Creat AZ IoT Hub](/images/Azure_configuration/Create_IoTHub.png)
+   1. 
+      
+   ### Create Azure Streaming Analytics
+  
+## Configure PowerBI
+
 
 ## FAQ
 * **Q: Do I need any special drivers?**  
