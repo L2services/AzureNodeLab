@@ -36,13 +36,13 @@
 ![Select Board 2](/images/software_configuration/board_selection2.png)  
 
 Note: If any of the board configuration settings have been changed, be sure to change them back to the defaults documented below:
-* Board: "NodeMCU 1.0 (ESP-12E Module)"
-* CPU Frequency: "80 MHz"
-* Flash Size: "4M (3M SPIFFS)"
-* Upload Speed: "115200"
-* Port: *{see Device Manager}*  
-
-  ![Board Configuration](/images/board_configuration/board_configuration.png)
+   > **Board**: "NodeMCU 1.0 (ESP-12E Module)"  
+   >**CPU Frequency**: "80 MHz"  
+   >**Flash Size**: "4M (3M SPIFFS)"  
+   >**Upload Speed**: "115200"  
+   >**Port**: *{see Device Manager}*  
+   
+   ![Board Configuration](/images/board_configuration/board_configuration.png)
 
 ## Install Azure Device Explorer
 While many of the steps for provisioning new devices and managing IoT Hub can be completed via the Azure Portal, the Azure Device Explorer is a great tool for development and debugging. In addition to the Azure Device Explorer linked to below, Microsoft also offers a cross-platform CLI tool called [IoT Hub Explorer](https://github.com/Azure/iothub-explorer).
