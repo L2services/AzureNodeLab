@@ -32,7 +32,7 @@ To keep the sketch in a single C++ file (`.ino`), we've chosen to use a set of t
 
 ---
 
-# Next
+# [Next ▻](3_Azure_IoT_Hub.md)
 Now that we've installed and configured the Arduino IDE and added our libraries, let's create the Azure IoT Hub that our NodeMCU will communicate with!
 
 *Next Step*: [Create Azure IoT Hub](3_Azure_IoT_Hub.md)

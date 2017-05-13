@@ -8,9 +8,9 @@
     * [Offline Installation](2_B_Install_Libraries_offline.md)
 1. [Create Azure IoT Hub](3_Azure_IoT_Hub.md)
 1. [NodeMCU Build](4_NodeMCU_Build.md)
-1. [Stream Analytics](#configure-azure-services)
-1. [PowerBI](#configure-powerbi)  
-1. [Web Dashboard](#)
+1. [Stream Analytics](5_Stream_Analytics.md)
+1. [Power BI](6_Power_BI.md)  
+1. [Web Dashboard](7_Web_Dashboard.md)
 * [FAQ / Help](FAQ.md)
 
 ## Activity Summary

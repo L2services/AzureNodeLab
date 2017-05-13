@@ -45,7 +45,15 @@ Note: If any of the board configuration settings have been changed, be sure to c
 
   ![Board Configuration](/images/board_configuration/board_configuration.png)
 
-# Next
+## Install Azure Device Explorer
+While many of the steps for provisioning new devices and managing IoT Hub can be completed via the Azure Portal, the Azure Device Explorer is a great tool for development and debugging. In addition to the Azure Device Explorer linked to below, Microsoft also offers a cross-platform CLI tool called [IoT Hub Explorer](https://github.com/Azure/iothub-explorer).
+
+1. Download the [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases/download/2017-5-5/SetupDeviceExplorer.msi) installer
+2. Run the installer and follow the on-screen prompts to complete the installation
+   > Note: After completing the installation, if you can't find the shortcut in your Start Menu, try looking for the executable at:  
+   >`C:\Program Files (x86)\Microsoft\DeviceExplorer\DeviceExplorer.exe`
+
+# [Next ▻](2_B_Install_Libraries_offline.md)
 Now that we've installed the Arduino IDE and configured the IDE to interact with our NodeMCU prototyping board, let's install the supporting libraries!
 
-*Next Step*: [Create Azure IoT Hub](3_Azure_IoT_Hub.md)
+*Next Step*: [Install Libraries (offline)](2_B_Install_Libraries_offline.md)
