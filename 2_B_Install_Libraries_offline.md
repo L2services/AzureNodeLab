@@ -7,7 +7,10 @@ In the previous lab, we acquired the Arduino IDE and installed Device Explorer. 
    <!--Copy the files to your computer for the best performance. Be sure to copy to a directory close to the root of your hard-drive such as `C:\AzureLab` as Windows may have issues with long file/directory names (some of the support package have deep nested directories).-->
    >
    > If you have installed the IDE to your computer, make sure you have the [ESP8266 board package](1_Software_Installation.md#configure-arduino-ide-for-esp8266) installed before continuing.
-1. Copy the content from the `/arduino-libraries/unpacked` folder to the `/arduino-1.8.2-esp8266/portable/sketchbook/libraries` folder
+1. Copy the content from the `/arduino-libraries/unpacked` folder to the folder:  
+   ```
+   /arduino-1.8.2-esp8266/portable/sketchbook/libraries
+   ```
    > You can also install the required libraries in a permanent installation. On Windows, the sketchbook location defaults to `..\{username}\Documents\Arduino` and you can confirm the sketchbook location in your Arduino Preference. Alternatively, you can follow the [Install Libraries (Online)](2_A_Install_Libraries.md) instructions.
    >
    > Make sure to copy the libraries to the `/sketchbook/libraries/` folder as there are "tools" and similar folders for other types of packages.
