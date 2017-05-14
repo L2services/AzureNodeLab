@@ -1,6 +1,6 @@
 # Software Installation
 
-> **Note**: If you are completing the lab in person, check with your lab leader to see if there is a local copy of the files available.  If so, use the portable installation on your thumb drive and skip to [Install Libraries (offline)](2_B_Install_Libraries_offline.md)
+> **Note**: If you are completing the lab in person, check with your lab leader to see if there is a local copy of the files available.  If so, use the portable installation on your thumb drive and skip to [Install Device Explorer](#install-device-explorer) and then proceed to the Install Libraries (Offline) step.
 
 ## Install the Arduino IDE
 1. Download the [Windows Installer](https://downloads.arduino.cc/arduino-1.8.2-windows.exe)
@@ -41,10 +41,10 @@ Note: If any of the board configuration settings have been changed, be sure to c
    >**Flash Size**: "4M (3M SPIFFS)"  
    >**Upload Speed**: "115200"  
    >**Port**: *{see Device Manager}*  
-   
+
    ![Board Configuration](/images/board_configuration/board_configuration.png)
 
-## Install Azure Device Explorer
+## Install Device Explorer
 While many of the steps for provisioning new devices and managing IoT Hub can be completed via the Azure Portal, the Azure Device Explorer is a great tool for development and debugging. In addition to the Azure Device Explorer linked to below, Microsoft also offers a cross-platform CLI tool called [IoT Hub Explorer](https://github.com/Azure/iothub-explorer).
 
 1. Download the [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/releases/download/2017-5-5/SetupDeviceExplorer.msi) installer
