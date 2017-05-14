@@ -17,7 +17,8 @@ Ensure you have all of the required components:
 
 ## Configure Hardware
 1. Plug the NodeMCU into the Grove Base Board
-   > **IMPORTANT**: Ensure the antenna on the NodeMCU is aligned with the antenna sketch on the Grove Base Board.
+   > **IMPORTANT**: Ensure the antenna on the NodeMCU is aligned with the antenna sketch on the Grove Base Board.  
+   > ![Alignment](/images/NodeMCU/NodeMCU_alignment.jpg)
 1. Plug the sensors in to their respective ports:
 
    | Sensor               | Port on Grove<br/>Base Board |
@@ -30,6 +31,7 @@ Ensure you have all of the required components:
 
    > **Note**: You can plug the accelerometer into either I2C port.
 
+   ![Finished NodeMCU](/images/NodeMCU/NodeMCU_Wired.jpg)
 
 ## Deploy Code
 1. Open the [AZIoTMQTT_Client.ino](/src/AZIoTMQTT_Client.ino) sketch in the Arduino IDE
@@ -67,6 +69,6 @@ Ensure you have all of the required components:
 
 
 # [Next ▻](5_Stream_Analytics.md)
-Now that we have our NodeMCU communicating with Azure, let's use some Azure Features to visualize and analyze the data!
+Now that we have our NodeMCU communicating with Azure, let's use some Azure features to visualize and analyze the data!
 
 *Next Step*: [Stream Analytics](5_Stream_Analytics.md)
