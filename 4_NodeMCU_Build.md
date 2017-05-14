@@ -1,8 +1,4 @@
 # NodeMCU Build
-```
-//TODO: Add instructions on configuring the NodeMCU
-
-```
 Ensure you have all of the required components:
 * [NodeMCU (v1.0)](http://amzn.to/2qTRR2F)
 * [Grove Base Board for NodeMCU](http://amzn.to/2qTtH7E) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/105020008/))
