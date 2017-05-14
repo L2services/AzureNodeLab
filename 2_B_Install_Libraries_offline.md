@@ -4,7 +4,7 @@ In the previous lab, we acquired the Arduino IDE and installed Device Explorer. 
 
 1. Open the Arduino IDE
    > If you are using the offline package, open the IDE from the `arduino-1.8.2-esp8266` folder. 
-   <!-->Copy the files to your computer for the best performance. Be sure to copy to a directory close to the root of your hard-drive such as `C:\AzureLab` as Windows may have issues with long file/directory names (some of the support package have deep nested directories).-->
+   <!--Copy the files to your computer for the best performance. Be sure to copy to a directory close to the root of your hard-drive such as `C:\AzureLab` as Windows may have issues with long file/directory names (some of the support package have deep nested directories).-->
    >
    > If you have installed the IDE to your computer, make sure you have the [ESP8266 board package](1_Software_Installation.md#configure-arduino-ide-for-esp8266) installed before continuing.
 1. Copy the content from the `/arduino-libraries/unpacked` folder to the `/arduino-1.8.2-esp8266/portable/sketchbook/libraries` folder
