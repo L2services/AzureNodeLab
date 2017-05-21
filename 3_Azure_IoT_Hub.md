@@ -24,7 +24,7 @@
 1. Input a device identifier, such as `MyNode1` in the prompt and then select the **Create** button in the dialog and then **Done** when prompted.  
    ![Create New Device](/images/Azure_configuration/Create_Device.png)
 1. Right click on the newly created device row and select **Copy Connection String for Selected Device**
-   > Keep a copy of the connection string on your clip board as it will be needed for the next step of the lab.
+   > Keep a copy of the connection string on your clipboard as it will be needed for the next step of the lab.
   
 
 

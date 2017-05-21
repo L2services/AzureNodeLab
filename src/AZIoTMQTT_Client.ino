@@ -15,8 +15,8 @@ const int pinTempSensor = A0;     // Grove - Temperature Sensor connect to A0
 
 ADXL345 adxl; //variable adxl is an instance of the ADXL345 library
 
-const char *AP_SSID = "L2Secure";
-const char *AP_PASS = "l2isawesome";
+const char *AP_SSID = "L2demo";
+const char *AP_PASS = "11111111";
 
 // Azure IoT Hub Settings --> CHANGE THESE
 #define IOTHUB_HOSTNAME         "jameslabiothub.azure-devices.net"

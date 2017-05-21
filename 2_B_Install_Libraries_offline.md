@@ -11,7 +11,7 @@ In the previous lab, we acquired the Arduino IDE and installed Device Explorer. 
    ```
    /arduino-1.8.2-esp8266/portable/sketchbook/libraries
    ```
-   > You can also install the required libraries in a permanent installation. On Windows, the sketchbook location defaults to `..\{username}\Documents\Arduino` and you can confirm the sketchbook location in your Arduino Preference. Alternatively, you can follow the [Install Libraries (Online)](2_A_Install_Libraries.md) instructions.
+   > You can also install the required libraries in a permanent installation. On Windows, the sketchbook location defaults to `..\{username}\Documents\Arduino` and you can confirm the sketchbook location in your Arduino Preferences. Alternatively, you can follow the [Install Libraries (Online)](2_A_Install_Libraries.md) instructions.
    >
    > Make sure to copy the libraries to the `/sketchbook/libraries/` folder as there are "tools" and similar folders for other types of packages.
 
@@ -26,7 +26,7 @@ For your reference, the following libraries are required for this project and ar
 
 ---
 ### Other Notes    
-To keep the sketch in a single C++ file (`.ino`), we've chosen to use a set of third party libraries for the lab. If you'd like to use the C libraries from Microsoft in a future project, you would install the following libraries. All of these libraries are included in the `/arduino-libraries` folder and can also be installed directly from the Arduino IDE via the menu Sketch → Include Library → Manage Libraries.  
+To keep the sketch in a single C++ file (`.ino`), we've chosen to use a set of third party libraries for the lab. If you'd like to use the C libraries from Microsoft in a future project, you would install the following libraries. All of these libraries are included in the `/arduino-libraries` folder and can also be installed directly from the Arduino IDE via Sketch → Include Library → Manage Libraries.  
 
 | Library                | Author         | Version |
 |------------------------|----------------|---------|
