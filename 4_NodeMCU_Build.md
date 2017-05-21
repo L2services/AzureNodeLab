@@ -24,7 +24,8 @@ Ensure you have all of the required components:
    | 3-Axis Accelerometer |             I2C              |
    | Switch               |             D7               |
 
-
+   > **Note**: You may need to plug the LED into the LED Socket Kit if it is disconnected. If the LED is not working, try plugging the LED in rotated 180* as the current will only flow through the LED in one direction.  
+   
    > **Note**: You can plug the accelerometer into either I2C port.
 
    ![Finished NodeMCU](/images/NodeMCU/NodeMCU_Wired.jpg)
