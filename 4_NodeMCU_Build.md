@@ -31,7 +31,7 @@ Ensure you have all of the required components:
 
 ## Deploy Code
 1. Open the [AZIoTMQTT_Client.ino](/src/AZIoTMQTT_Client.ino) sketch in the Arduino IDE
-1. Paste the Connection String from [section 3](3_Azure_IoT_Hub#Register-Device-to-Azure-IoT-Hub) of the lab on the end of the line:
+1. Paste the Connection String from [section 3](3_Azure_IoT_Hub.md#Register-Device-to-Azure-IoT-Hub) of the lab on the end of the line:
    ```
    // Azure IoT Hub Settings --> CHANGE THESE 
    ```
