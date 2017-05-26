@@ -56,7 +56,7 @@ To add a consumer group to your IoT hub, follow these steps:
 1. Click the **Overview** tab and then click the link in the **URL** field to open the web app.
    > Every three seconds, the NodeMCU will send sensor values to IoT Hub which the web app is subscribed to. The web app will then push the data to your browser where it should be displayed in a chart similar to below.
    >
-   >![Web App Trend](/images/webapp_configuration/WebApp_Blank.png)
+   >![Web App Trend](/images/webapp_configuration/Webapp_2.png)
 
 # Hooray!
 Summary of activities. Recommended next steps!
