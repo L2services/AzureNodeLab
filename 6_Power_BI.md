@@ -9,7 +9,7 @@
    1. On the report creation page, add a line chart.
    1. On the **Fields** pane, expand the table that you specified when you created the output for the Stream Analytics job.
    1. Drag **EventEnqueuedUtcTime** to the Line chart you just added in the page.
-   1. Drag **Temperature** to the Line chart you just added in the page.
+   1. Drag **Temperature_F** to the Line chart you just added in the page.
 
       Now a line chart is created. The x-axis of chart displays date and time in the UTC time zone. The y-axis displays temperature from the sensor.
       
