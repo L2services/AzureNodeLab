@@ -34,4 +34,4 @@ Microsoft also offers the [Power BI mobile apps](https://powerbi.microsoft.com/e
 # [Next ▻](7_Web_Dashboard.md)
 Now that we have our NodeMCU communicating with Azure, let's use some Azure Features to visualize and analyze the data!
 
-*Next Step*: [Web Dashboard](7_Web_Deshboard.md)
+*Next Step*: [Web Dashboard](7_Web_Dashboard.md)
