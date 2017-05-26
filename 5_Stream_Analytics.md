@@ -20,7 +20,7 @@ To add a consumer group to your IoT hub, follow these steps:
 
    **Resource group**: Use the same resource group that your IoT hub uses.
 
-   **Location**: Use the same location as your resource group.
+   **Location**: Use the same location as your resource group. (West Central US)
 
    **Pin to dashboard**: Check this option for easy access to your IoT hub from the dashboard.
 
@@ -65,14 +65,46 @@ To add a consumer group to your IoT hub, follow these steps:
 
    ![Add an output to a Stream Analytics job in Azure](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-live-data-visualization-in-power-bi/4_add-output-to-stream-analytics-job-azure.png)
 
-### Configure the query of the Stream Analytics job
+### Configure the Functions of the Stream Analytics job
+1. Under **Job Topology**, click **Functions**.
+1. Click on **+Add** to add a function.
+1. **Source** : input **tempC2F**.
+1. Update the code editor with the following Javascript code.
+1. Click **Create**.
+```javascript
+// Convert Celsius to Fahrenheit
+function main(tempC) {
+    return tempC*1.8+32;
+}
+```
+![Add a function to a Stream Analytics job in Azure](/images/Azure_configuration/StreamAnalytics_Function.png)
+
+### Configure the Query of the Stream Analytics job
 
 1. Under **Job Topology**, click **Query**.
 1. Replace `[YourInputAlias]` with the input alias of the job.
 1. Replace `[YourOutputAlias]` with the output alias of the job.
 1. Click **Save**.
 
-   ![Add a query to a Stream Analytics job in Azure](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-live-data-visualization-in-power-bi/5_add-query-stream-analytics-job-azure.png)
+```sql
+SELECT
+    AVG(AcceX) as AcceX,
+    AVG(AcceY) as AcceY,    
+    AVG(AcceZ) as AcceZ,    
+    AVG(X) as X,    
+    AVG(Y) as Y,    
+    AVG(Z) as Z,    
+    UDF.tempC2F(AVG(Temperature)) as Temperature_F,
+    AVG(Temperature) as Temperature_C,    
+    EventEnqueuedUtcTime
+Into
+    PowerBI
+FROM
+    IoTHub
+Group by EventEnqueuedUtcTime, SLIDINGWINDOW(second,5)  
+```
+   ![Add a query to a Stream Analytics job in Azure](/images/Azure_configuration/StreamAnalytics_Query.png)
+
 
 ### Run the Stream Analytics job
 
@@ -85,4 +117,4 @@ In the Stream Analytics job, click **Start** > **Now** > **Start**. Once the job
 # [Next ▻](6_Power_BI.md)
 We now have our NodeMCU streaming data from sensors to Azure IoT Hub and Stream Analytics is processing that data on the fly and sending it to Power BI! Using similar steps as above, we could create different logic, processing, and output locations for our IoT data. In the next section, we'll configure a Power BI display to visualize the IoT data.
 
-*Next Step*: [Stream Analytics](5_Stream_Analytics.md)
+*Next Step*: [Power BI](6_Power_BI.md)

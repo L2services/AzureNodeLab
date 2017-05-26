@@ -44,7 +44,7 @@ To add a consumer group to your IoT hub, follow these steps:
 1. Scroll down and select **Application Settings**
 1. Change **Web Sockets** to `On`
    ![WebSockets](/images/webapp_configuration/WebSockets_Enable.png)
-1. Scroll down to **App Settings** and fill add the following keys:
+1. Scroll down to **App Settings** and add the following keys:
    `Azure.IoT.IoTHub.ConnectionString`  
    `Azure.IoT.IoTHub.ConsumerGroup`
 1. Fill in the keys with the Connection String and Consumer Group your IoT Hub

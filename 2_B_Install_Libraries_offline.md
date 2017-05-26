@@ -3,13 +3,13 @@
 In the previous lab, we acquired the Arduino IDE and installed Device Explorer. If you are following along online, you may have installed a copy of the the Arduino IDE to your computer and then configured the Board Manager to download the ESP8266 package. If you are following along in person and have been provided a flash drive, you'll find a copy of the Arduino IDE on the flash drive.
 
 1. Open the Arduino IDE
-   > If you are using the offline package, open the IDE from the `arduino-1.8.2-esp8266` folder. 
+   > If you are using the offline package, open the IDE from the `arduino-IDE-esp8266` folder. 
    <!--Copy the files to your computer for the best performance. Be sure to copy to a directory close to the root of your hard-drive such as `C:\AzureLab` as Windows may have issues with long file/directory names (some of the support package have deep nested directories).-->
    >
    > If you have installed the IDE to your computer, make sure you have the [ESP8266 board package](1_Software_Installation.md#configure-arduino-ide-for-esp8266) installed before continuing.
 1. Copy the content from the `/arduino-libraries/unpacked` folder to the folder:  
    ```
-   /arduino-1.8.2-esp8266/portable/sketchbook/libraries
+   /arduino-IDE-esp8266/portable/sketchbook/libraries
    ```
    > You can also install the required libraries in a permanent installation. On Windows, the sketchbook location defaults to `..\{username}\Documents\Arduino` and you can confirm the sketchbook location in your Arduino Preferences. Alternatively, you can follow the [Install Libraries (Online)](2_A_Install_Libraries.md) instructions.
    >
