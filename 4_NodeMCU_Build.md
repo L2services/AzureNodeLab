@@ -20,7 +20,7 @@ Ensure you have all of the required components:
    | Sensor               | Port on Grove<br/>Base Board |
    | -------------------- | :--------------------------: |
    | Temperature Sensor   |             A0               |
-   | LED                  |             D3               |
+   | LED                  |             D5               |
    | 3-Axis Accelerometer |             I2C              |
    | Switch               |             D7               |
 
@@ -61,8 +61,12 @@ Ensure you have all of the required components:
 1. Ensure the newly created device is selected in the **Device ID** field and then click the **Monitor** button
    > Verify IoT Hub is receiving data. Event data should be displayed in the "Event Hub Data" section of the screen as shown in the following screenshot. The data should update every 3 seconds.
    ![Receiving Data](/images/Azure_configuration/Receiving_IoT_Data.png)
+1. Select the **Messages to Device** tab
+   > This is to send  **Cloud to Device** message from IoT Hub to the client device, and can be used to trigger remote relay or change the parameter in the remote client programm on the fly.
 
-
+   > In this lab, we can remote turn the LED on by filling **{"Name":"ActivateRelay","Parameters":{"Activated":1}}** in **Message** field, and click on **Send**. The sent message is then displayed in **Output** section. (To turn off LED, simply change the parameter to 0, and send.)
+   
+   ![sending Data](/images/Azure_configuration/DeviceExplorer_C2D.png)
 
 # [Next ▻](5_Stream_Analytics.md)
 Now that we have our NodeMCU communicating with Azure, let's use some Azure features to visualize and analyze the data!
