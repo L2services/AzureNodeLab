@@ -14,7 +14,7 @@ Ensure you have all of the required components:
 ## Configure Hardware
 1. Plug the NodeMCU into the Grove Base Board
    > **IMPORTANT**: Ensure the antenna on the NodeMCU is aligned with the antenna sketch on the Grove Base Board.  
-   > ![Alignment](/images/NodeMCU/Grove_Alignment.jpg)
+   > ![Alignment](/images/NodeMCU/Grove_Alignment.png)
 1. Plug the sensors in to their respective ports:
 
    | Sensor               | Port on Grove<br/>Base Board |
