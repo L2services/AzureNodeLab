@@ -28,7 +28,7 @@ You're provided the report link that you can share with anyone for report access
 ![Publish a Microsoft Power BI report](/images/Azure_configuration/PowerBI_Dataset_publish.png)
 
 
-**View Streaming Data in PowerBI Dashboard**
+## View Streaming Data in PowerBI Dashboard
 1. Once the report is published, we can now add report(s) into Dashboard
    1. In the report we just created, click **Pin Live Page**
 
@@ -38,7 +38,7 @@ You're provided the report link that you can share with anyone for report access
       
       ![Create new Dashboard](/images/Azure_configuration/PowerBI_PinDashboard_2.png)
 
-1. Add the streaming data Tile to the Dashboard
+1. Add Streaming Data Tile to Dashboard
    1. Click on **Add tile**
 
       ![Add Tile](/images/Azure_configuration/PowerBI_LiveTile.png)
