@@ -21,6 +21,7 @@ In this lab, we'll walk through the basics of:
 * Deploying the sketch to the NodeMCU device
 * Monitoring the data received from the NodeMCU
 * Visualizing and analyzing the IoT data in PowerBI
+* Visualizing and analyzing the IoT data in custom web application
 
 ## Requirements
 The following components are required to follow this lab in its entirety. If you have experience with prototyping boards and developing Arduino sketches, you can substitute many of the sensors and components in this guide and achieve the same general output. This is the power of Azure IoT Hub: device agnostic support through standards based protocols like AMQP, MQTT, and HTTPS. That being said, the lab is written for use with a specific set of devices and hardware and the supporting source code matches this hardware.
