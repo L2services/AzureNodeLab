@@ -27,6 +27,27 @@ You're provided the report link that you can share with anyone for report access
 
 ![Publish a Microsoft Power BI report](/images/Azure_configuration/PowerBI_Dataset_publish.png)
 
+
+**View Streaming Data in PowerBI Dashboard**
+1. Once the report is published, we can now add report(s) into Dashboard
+   1. In the report we just created, click **Pin Live Page**
+   ![Pin Report to Dashboard](/images/Azure_configuration/PowerBI_PinDashboard.png)
+   1. Fill in Dashboard name and **Pin Live**
+   ![Create new Dashboard](/images/Azure_configuration/PowerBI_PinDashboard_2.png)
+1. Add the streaming data Tile to the Dashboard
+   1. Click on **Add tile**
+    ![Add Tile](/images/Azure_configuration/PowerBI_LiveTile.png)
+   1. Select **CUSTOM STREAMING DATA**
+   ![Custom Streaming Data](/images/Azure_configuration/PowerBI_LiveTile_2a.png)
+   1. Select the Dataset we just created
+   ![Select Dataset](/images/Azure_configuration/PowerBI_LiveTile_3a.png)
+   1. Select **Line chart** in Visualization Type, **eventenqueuedutctime** in Axis, and **temperature_f** in Values.
+   ![Configure Visualization](/images/Azure_configuration/PowerBI_LiveTile_4a.png)
+   1. Input Tile Title, and Apply
+   ![Input Tile Title](/images/Azure_configuration/PowerBI_LiveTile_5a.png)
+
+
+
 Microsoft also offers the [Power BI mobile apps](https://powerbi.microsoft.com/en-us/documentation/powerbi-power-bi-apps-for-mobile-devices/) for viewing and interacting with your Power BI dashboards and reports on your mobile device.
 
 
