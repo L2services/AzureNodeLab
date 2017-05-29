@@ -14,7 +14,7 @@ Ensure you have all of the required components:
 ## Configure Hardware
 1. Plug the NodeMCU into the Grove Base Board
    > **IMPORTANT**: Ensure the antenna on the NodeMCU is aligned with the antenna sketch on the Grove Base Board.  
-   > ![Alignment](/images/NodeMCU/NodeMCU_Alignment.jpg)
+   > ![Alignment](/images/NodeMCU/Grove_Alignment.jpg)
 1. Plug the sensors in to their respective ports:
 
    | Sensor               | Port on Grove<br/>Base Board |
@@ -22,12 +22,11 @@ Ensure you have all of the required components:
    | Temperature Sensor   |             A0               |
    | LED                  |             D5               |
    | 3-Axis Accelerometer |             I2C              |
-   | Switch               |             D7               |
 
 
    > **Note**: You can plug the accelerometer into either I2C port.
 
-   ![Finished NodeMCU](/images/NodeMCU/NodeMCU_Wired.jpg)
+   ![Finished NodeMCU](/images/NodeMCU/Grove_connect.png)
 
 ## Deploy Code
 1. Open the [AZIoTMQTT_Client.ino](/src/AZIoTMQTT_Client.ino) sketch in the Arduino IDE
