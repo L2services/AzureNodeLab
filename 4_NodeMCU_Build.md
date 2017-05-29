@@ -6,7 +6,7 @@ Ensure you have all of the required components:
   * [Temperature Sensor](http://amzn.to/2s7oFpv) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020015/))
   * [Vibration Sensor](http://amzn.to/2qTDpqN) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020054/))
   * [LED](http://amzn.to/2qA5VNv) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/104030005))
-  * [Button](http://amzn.to/2pZvedb) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020003/))
+  
 * [Micro USB cable](http://amzn.to/2pI5VLP) (or from [Monoprice](https://www.monoprice.com/product?p_id=5137))
 
 > Note: Each of the Grove Sensors come with a 4-pin Grove cable which is used to connect the sensor to the Grove Base Board.
