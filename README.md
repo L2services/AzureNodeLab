@@ -31,9 +31,9 @@ The following components are required to follow this lab in its entirety. If you
 * [NodeMCU (v1.0)](http://amzn.to/2qTRR2F)
 * [Grove Base Shield for NodeMCU](http://amzn.to/2qTtH7E) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/105020008/))
 * Sensors: 
-  * [Temperature/Humidity Sensor](http://amzn.to/2psBJnC) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020074/))
+  * [Temperature Sensor](http://amzn.to/2s7oFpv) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020015/))
   * [Vibration Sensor](http://amzn.to/2qTDpqN) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020054/))
-  * [LED Multicolor](http://amzn.to/2qTHSdP) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/104030014/))
+  * [LED](http://amzn.to/2qA5VNv) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/104030005))
   * [Button](http://amzn.to/2pZvedb) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020003/))
 
 ### Software

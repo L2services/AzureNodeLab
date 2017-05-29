@@ -3,9 +3,9 @@ Ensure you have all of the required components:
 * [NodeMCU (v1.0)](http://amzn.to/2qTRR2F)
 * [Grove Base Board for NodeMCU](http://amzn.to/2qTtH7E) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/105020008/))
 * Sensors: 
-  * [Temperature/Humidity Sensor](http://amzn.to/2psBJnC) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020074/))
+  * [Temperature Sensor](http://amzn.to/2s7oFpv) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020015/))
   * [Vibration Sensor](http://amzn.to/2qTDpqN) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020054/))
-  * [LED Multicolor](http://amzn.to/2qTHSdP) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/104030014/))
+  * [LED](http://amzn.to/2qA5VNv) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/104030005))
   * [Button](http://amzn.to/2pZvedb) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020003/))
 * [Micro USB cable](http://amzn.to/2pI5VLP) (or from [Monoprice](https://www.monoprice.com/product?p_id=5137))
 
