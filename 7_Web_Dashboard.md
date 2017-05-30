@@ -1,5 +1,5 @@
 # Web Dashboard
-In the previous activities, we connected sensors to a NodeMCU which is configured to send the data to Azure IoT Hub. In this activity, we will deploy a web application to Azure to visualize the data. In the spirit of open source, we'll deploy a NodeJS application to Azure App Service via an automated Git connected deployment. 
+In the previous activities, we connected sensors to a NodeMCU which is configured to send the data to Azure IoT Hub, and visualize the data in PowerBI. In this activity, we will deploy a web application to Azure to visualize the data. In the spirit of open source, we'll deploy a NodeJS application to Azure App Service via an automated Git connected deployment. 
 
 The web app subscribes to the IoT Events and forwards them onto our webpage where the data is trended in a HTML5 chart via ChartJS. 
 
@@ -44,7 +44,7 @@ To add a consumer group to your IoT hub, follow these steps:
 1. Scroll down and select **Application Settings**
 1. Change **Web Sockets** to `On`
    ![WebSockets](/images/webapp_configuration/WebSockets_Enable.png)
-1. Scroll down to **App Settings** and fill add the following keys:
+1. Scroll down to **App Settings** and add the following keys:
    `Azure.IoT.IoTHub.ConnectionString`  
    `Azure.IoT.IoTHub.ConsumerGroup`
 1. Fill in the keys with the Connection String and Consumer Group your IoT Hub
@@ -56,7 +56,7 @@ To add a consumer group to your IoT hub, follow these steps:
 1. Click the **Overview** tab and then click the link in the **URL** field to open the web app.
    > Every three seconds, the NodeMCU will send sensor values to IoT Hub which the web app is subscribed to. The web app will then push the data to your browser where it should be displayed in a chart similar to below.
    >
-   >![Web App Trend](/images/webapp_configuration/WebApp_Blank.png)
+   >![Web App Trend](/images/webapp_configuration/Webapp_2.png)
 
 # Hooray!
-Summary of activities. Recommended next steps!
+We've successfully connected a custom web application to pull live streaming data from IoT Hub, and visualizated the data through 3rd party charting javascript library. This demonstrated the integration flexibility of IoT Hub and concluded this hands on lab. Great Job!

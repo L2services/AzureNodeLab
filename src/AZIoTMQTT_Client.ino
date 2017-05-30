@@ -28,7 +28,7 @@ AzureIoTHubMQTTClient client(tlsClient, IOTHUB_HOSTNAME, DEVICE_ID, DEVICE_KEY);
 WiFiEventHandler  e1, e2;
 
 
-const int LED_PIN = 0; //Pin to turn on/of LED a command from IoT Hub
+const int LED_PIN = 14; //Pin to turn on/off LED (C2D command from IoT Hub)
 unsigned long lastMillis = 0;
 
 void connectToIoTHub(); // <- predefine connectToIoTHub() for setup()

@@ -3,10 +3,10 @@ Ensure you have all of the required components:
 * [NodeMCU (v1.0)](http://amzn.to/2qTRR2F)
 * [Grove Base Board for NodeMCU](http://amzn.to/2qTtH7E) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/105020008/))
 * Sensors: 
-  * [Temperature/Humidity Sensor](http://amzn.to/2psBJnC) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020074/))
+  * [Temperature Sensor](http://amzn.to/2s7oFpv) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020015/))
   * [Vibration Sensor](http://amzn.to/2qTDpqN) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020054/))
-  * [LED Multicolor](http://amzn.to/2qTHSdP) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/104030014/))
-  * [Button](http://amzn.to/2pZvedb) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/101020003/))
+  * [LED](http://amzn.to/2qA5VNv) (or from [Mouser](http://www.mouser.com/ProductDetail/Seeed-Studio/104030005))
+  
 * [Micro USB cable](http://amzn.to/2pI5VLP) (or from [Monoprice](https://www.monoprice.com/product?p_id=5137))
 
 > Note: Each of the Grove Sensors come with a 4-pin Grove cable which is used to connect the sensor to the Grove Base Board.
@@ -14,25 +14,24 @@ Ensure you have all of the required components:
 ## Configure Hardware
 1. Plug the NodeMCU into the Grove Base Board
    > **IMPORTANT**: Ensure the antenna on the NodeMCU is aligned with the antenna sketch on the Grove Base Board.  
-   > ![Alignment](/images/NodeMCU/NodeMCU_Alignment.jpg)
+   > ![Alignment](/images/NodeMCU/Grove_Alignment.png)
 1. Plug the sensors in to their respective ports:
 
    | Sensor               | Port on Grove<br/>Base Board |
    | -------------------- | :--------------------------: |
    | Temperature Sensor   |             A0               |
-   | LED                  |             D3               |
+   | LED                  |             D5               |
    | 3-Axis Accelerometer |             I2C              |
-   | Switch               |             D7               |
 
    > **Note**: You may need to plug the LED into the LED Socket Kit if it is disconnected. If the LED is not working, try plugging the LED in rotated 180* as the current will only flow through the LED in one direction.  
    
    > **Note**: You can plug the accelerometer into either I2C port.
 
-   ![Finished NodeMCU](/images/NodeMCU/NodeMCU_Wired.jpg)
+   ![Finished NodeMCU](/images/NodeMCU/Grove_connect.png)
 
 ## Deploy Code
 1. Open the [AZIoTMQTT_Client.ino](/src/AZIoTMQTT_Client.ino) sketch in the Arduino IDE
-1. Paste the Connection String from [section 3](3_Azure_IoT_Hub#Register-Device-to-Azure-IoT-Hub) of the lab on the end of the line:
+1. Paste the Connection String from [section 3](3_Azure_IoT_Hub.md#Register-Device-to-Azure-IoT-Hub) of the lab on the end of the line:
    ```
    // Azure IoT Hub Settings --> CHANGE THESE 
    ```
@@ -62,8 +61,12 @@ Ensure you have all of the required components:
 1. Ensure the newly created device is selected in the **Device ID** field and then click the **Monitor** button
    > Verify IoT Hub is receiving data. Event data should be displayed in the "Event Hub Data" section of the screen as shown in the following screenshot. The data should update every 3 seconds.
    ![Receiving Data](/images/Azure_configuration/Receiving_IoT_Data.png)
+1. Select the **Messages to Device** tab
+   > This is to send  **Cloud to Device** message from IoT Hub to the client device, and can be used to trigger remote relay or change the parameter in the remote client programm on the fly.
 
-
+   > In this lab, we can remote turn the LED on by filling **{"Name":"ActivateRelay","Parameters":{"Activated":1}}** in **Message** field, and click on **Send**. The sent message is then displayed in **Output** section. (To turn off LED, simply change the parameter to 0, and send.)
+   
+   ![sending Data](/images/Azure_configuration/DeviceExplorer_C2D.png)
 
 # [Next ▻](5_Stream_Analytics.md)
 Now that we have our NodeMCU communicating with Azure, let's use some Azure features to visualize and analyze the data!
