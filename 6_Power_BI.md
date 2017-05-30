@@ -66,6 +66,6 @@ Microsoft also offers the [Power BI mobile apps](https://powerbi.microsoft.com/e
 
 
 # [Next ▻](7_Web_Dashboard.md)
-Now that we have our NodeMCU communicating with Azure, let's use some Azure Features to visualize and analyze the data!
+Now we have seen the live streaming data in PowerBI with just a few clicks. Let's take a look of how custom web app can also pull live streaming data from IoT Hub using Node.js Azure IoT SDK.
 
 *Next Step*: [Web Dashboard](7_Web_Dashboard.md)
