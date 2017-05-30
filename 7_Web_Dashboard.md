@@ -1,5 +1,5 @@
 # Web Dashboard
-In the previous activities, we connected sensors to a NodeMCU which is configured to send the data to Azure IoT Hub. In this activity, we will deploy a web application to Azure to visualize the data. In the spirit of open source, we'll deploy a NodeJS application to Azure App Service via an automated Git connected deployment. 
+In the previous activities, we connected sensors to a NodeMCU which is configured to send the data to Azure IoT Hub, and visualize the data in PowerBI. In this activity, we will deploy a web application to Azure to visualize the data. In the spirit of open source, we'll deploy a NodeJS application to Azure App Service via an automated Git connected deployment. 
 
 The web app subscribes to the IoT Events and forwards them onto our webpage where the data is trended in a HTML5 chart via ChartJS. 
 
