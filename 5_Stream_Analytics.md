@@ -82,8 +82,7 @@ function main(tempC) {
 ### Configure the Query of the Stream Analytics job
 
 1. Under **Job Topology**, click **Query**.
-1. Replace `[YourInputAlias]` with the input alias of the job.
-1. Replace `[YourOutputAlias]` with the output alias of the job.
+1. Copy & paste the following query into the editor.
 1. Click **Save**.
 
 ```sql
