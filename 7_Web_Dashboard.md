@@ -59,4 +59,4 @@ To add a consumer group to your IoT hub, follow these steps:
    >![Web App Trend](/images/webapp_configuration/Webapp_2.png)
 
 # Hooray!
-Summary of activities. Recommended next steps!
+We've successfully connected a custom web application to pull live streaming data from IoT Hub, and visualizated the data through 3rd party charting javascript library. This demonstrated the integration flexibility of IoT Hub and concluded this hands on lab. Great Job!
